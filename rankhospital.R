@@ -78,10 +78,10 @@ rankhospital <- function(state, outcome, num = "best") {
     p <-
       subset(
         x,
-        Hospital.30.Day.Death..Mortality..Rates.from.Heart.Pneumonia != "Not Available",
+        Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia != "Not Available",
         select = c(
           State,
-          Hospital.30.Day.Death..Mortality..Rates.from.Heart.Pneumonia,
+          Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia,
           Hospital.Name
         )
       )
